@@ -9,7 +9,23 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
   
+    <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<body onmousedown="return false" onselectstart="return false">
     
+    
+<script>
+    function isMobileOrTablet() {
+      const ua = navigator.userAgent.toLowerCase();
+      return /android|iphone|ipad|ipod|tablet/.test(ua);
+    }
+
+    if (!isMobileOrTablet()) {
+      window.location.href = "       algum link               "; // Altere essa URL conforme necessário
+    }
+  </script>
     
     <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
   
